@@ -1,0 +1,15 @@
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\bin\Debug\net10.0\ExpenseTracker.exe
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\bin\Debug\net10.0\ExpenseTracker.deps.json
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\bin\Debug\net10.0\ExpenseTracker.runtimeconfig.json
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\bin\Debug\net10.0\ExpenseTracker.dll
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\bin\Debug\net10.0\ExpenseTracker.pdb
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.GeneratedMSBuildEditorConfig.editorconfig
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.AssemblyInfoInputs.cache
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.AssemblyInfo.cs
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.csproj.CoreCompileInputs.cache
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.dll
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\refint\ExpenseTracker.dll
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.pdb
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.genruntimeconfig.cache
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\ref\ExpenseTracker.dll
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\ExpenseT.567C5DF3.Up2Date
