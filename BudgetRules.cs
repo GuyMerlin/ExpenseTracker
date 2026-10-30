@@ -12,6 +12,8 @@
 //  Work one method at a time. Run the tests, watch them turn green.
 //  All methods are pure: no Console I/O, no shared state.
 // =====================================================================
+using System.Globalization;
+
 namespace ExpenseTracker;
 
 public static class BudgetRules
@@ -29,7 +31,7 @@ public static class BudgetRules
         // TODO: guard clauses + decimal.Round(amount, 2)
         if (amount <= 0)
         {
-            throw new NotImplementedException("Le montant doit être supérieur à zéro");
+            throw new InvalidExpenseException("Le montant doit être supérieur à zéro");
         }
         if (amount > MaxAmount)
         {
@@ -51,10 +53,11 @@ public static class BudgetRules
 
         if (amount <= 0)
         {
-            throw new NotImplementedException("Le montant doit être supérieur à zéro");
+            throw new InvalidExpenseException("Le montant doit être supérieur à zéro");
         }
         return amount switch
         {
+            < 10m => "Micro",
             < 50m => "Small",
             < 200m => "Medium",
             _ => "Large"
@@ -72,7 +75,17 @@ public static class BudgetRules
     public static string? NormalizeCategory(string? input)
     {
         // TODO
-        throw new NotImplementedException();
+        return input?.Trim().ToLowerInvariant() switch
+        {
+            "food" or "f" => "Food",
+            "transport" or "t" => "Transport",
+            "utilities" or "u" => "Utilities",
+            "entertainment" or "e" => "Entertainment",
+            "other" or "o" => "Other",
+            _ => null
+
+        };
+        throw new InvalidExpenseException("Enter the good category");
     }
 
     /// <summary>
@@ -83,6 +96,24 @@ public static class BudgetRules
     public static string BudgetStatus(decimal remaining, decimal monthlyLimit)
     {
         // TODO
+        if (monthlyLimit <= 0)
+        {
+            throw new InvalidExpenseException(
+                "The monthly budget limit must be greater than zero.");
+        }
+
+        // Check whether the budget has been exceeded.
+        if (remaining < 0)
+        {
+            return "Budget Epuisé";
+        }
+
+        // Check whether less than 10% remains.
+        if (remaining < monthlyLimit * NearLimitFraction)
+        {
+            return "Almost out";
+        }
+        return "On track";
         throw new NotImplementedException();
     }
 
@@ -93,7 +124,8 @@ public static class BudgetRules
     public static string FormatCurrency(decimal amount)
     {
         // TODO: return FormatCurrency(amount, "$");
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
+        return FormatCurrency(amount, "$");
     }
 
     /// <summary>
@@ -102,7 +134,10 @@ public static class BudgetRules
     public static string FormatCurrency(decimal amount, string currencySymbol)
     {
         // TODO: use a "0.00" format string
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
+        return currencySymbol + amount.ToString(
+       "0.00",
+       CultureInfo.InvariantCulture);
     }
 }
 

@@ -13,3 +13,4 @@ D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\ExpenseT
 D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.genruntimeconfig.cache
 D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\ref\ExpenseTracker.dll
 D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\ExpenseT.567C5DF3.Up2Date
+D:\Humber Polytechnic\Project\MyBudget\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.sourcelink.json
